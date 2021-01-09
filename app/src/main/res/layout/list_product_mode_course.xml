@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:id="@+id/lyt_container"
+    android:background="#009688"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        >
+        <!-- Thumbnail Image -->
+        <ImageView
+            android:tint="#4CCE8E"
+            android:id="@+id/thumbnail"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/smartlist1"/>
+
+        <!-- Movie Title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/thumbnail"
+            android:text="text"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/title"
+            android:textStyle="bold" />
+
+        <!-- Rating -->
+
+        <!-- Genre -->
+
+        <!-- Release Year -->
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="right"
+            android:text="text"
+            android:textColor="#FF9800"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating"
+            android:layout_marginLeft="325dp"
+            android:layout_marginTop="-19dp"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:fontFamily="sans-serif-condensed"
+            android:text="med"
+            android:textColor="@color/genre"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/quantityM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/thumbnail"
+            android:layout_alignBottom="@+id/title"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="-27dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="text"
+            android:textColor="@color/year"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="3"
+        android:height="@dimen/list_item_height"
+        android:paddingLeft="@dimen/list_item_padding_sides"
+        android:paddingRight="@dimen/list_item_padding_sides">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:text="Deleted"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:clickable="false"
+            android:layout_weight="2"
+            android:hapticFeedbackEnabled="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="#FFEB3B"
+                android:src="@drawable/swipeadd"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/txt_add"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="SWIPE TO ADD"
+                android:textColor="#FFEB3B"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

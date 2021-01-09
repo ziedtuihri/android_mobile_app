@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_lists"
+            android:icon="@drawable/ic_receipt_black_24dp"
+            android:title="Lists" />
+        <item
+            android:id="@+id/nav_historique"
+            android:icon="@drawable/history"
+            android:title="Historic" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_Groups"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="Groups" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />
+
+        <item
+            android:id="@+id/nav_pointOfSale"
+            android:icon="@drawable/ic_receipt_black_24dp"
+            android:title="add point of sale" />
+    </group>
+
+</menu>

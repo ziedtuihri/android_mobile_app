@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#36B677</color>
+    <color name="colorPrimaryDark">#2DA56A</color>
+    <color name="colorAccent">#3AD0E4</color>
+    <color name="facebookBlue">#3F5996</color>
+    <color name="twitterBlue">#29C5F6</color>
+    <color name="googleRed">#D03E2F</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="editTextBG">#FFFFFF</color>
+    <color name="textColor">#6e6e6e</color>
+    <color name="genre">#666666</color>
+    <color name="year">#888888</color>
+    <color name="list_divider">#FFFFFF</color>
+    <color name="list_row_start_color">#ffffff</color>
+    <color name="list_row_end_color">#FFFFFF</color>
+    <color name="list_row_hover_start_color">#ebeef0</color>
+    <color name="list_row_hover_end_color">#ebeef0</color>
+</resources>

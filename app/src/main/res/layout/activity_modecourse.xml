@@ -1,0 +1,186 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/side_nav_bar"
+        android:id="@+id/navbar"
+        android:gravity="left">
+
+        <SearchView
+            android:layout_marginTop="5dp"
+            android:id="@+id/searchView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rigth_radius"
+            android:backgroundTint="#E9E7E7"
+            android:searchHintIcon="@color/search_layover_bg"
+            android:elevation="5dp" />
+
+        <Button
+            android:id="@+id/scan"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="3dp"
+            android:backgroundTint="#FFFFFF"
+            android:background="@drawable/scancode"
+            android:contextClickable="true"
+            />
+        <LinearLayout
+            android:id="@+id/espace"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#36B677"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/espace2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#36B677"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="#36B677"
+            android:id="@+id/logoCart"
+            >
+
+
+
+            <ImageView
+                android:id="@+id/panierActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/panier"
+                android:tint="#FF9800" />
+
+            <TextView
+                android:id="@+id/numberOfProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="sans-serif-black"
+                android:text="0"
+                android:textColor="#E9E7E7"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hd"
+        android:orientation="vertical">
+
+
+
+
+
+
+        <ListView
+            android:id="@+id/panier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titrepanier"
+            android:background="#F7D7ECE2"
+            tools:ignore="NotSibling">
+
+        </ListView>
+
+        <ListView
+            android:id="@+id/listProduct"
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:layout_below="@+id/title"
+            android:background="#57D7ECE2"></ListView>
+
+        <ListView
+            android:id="@+id/listsearsh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F7D7ECE2">
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/fragment_detail_fab"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:background="#75D8A7"
+            android:textColor="#E9E7E7"
+            android:text="Course"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#36B677"
+                >
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#E9E7E7"
+                    android:text=" PRICE  "
+                    android:fontFamily="sans-serif-black"
+                    />
+                <TextView
+                    android:id="@+id/sumPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#E9E7E7"
+                    android:text="0 DT"
+                    android:fontFamily="sans-serif-black"
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/buy"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#36B677"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#E9E7E7"
+                    android:text="BUY"
+                    android:fontFamily="sans-serif-black"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

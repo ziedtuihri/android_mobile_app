@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="160dp"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <!-- Thumbnail Image -->
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:tint="#4CAF50"
+            android:src="@drawable/ic_add_black_24dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:textColor="#534B4B"
+        android:textSize="8dp"
+        android:textStyle="bold"
+
+        android:text="CLICK HER TO ADD NEW LIST"
+        android:layout_below="@id/thumbnail"
+        android:gravity="center_horizontal"/>
+
+</RelativeLayout>

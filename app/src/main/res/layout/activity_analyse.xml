@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Update_password"
+        >
+
+        <RelativeLayout
+            android:background="@drawable/side_nav_cont"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/green"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Analyse"
+                android:textSize="30dp"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="left"
+                android:layout_centerVertical="true"
+                android:tint="#FFFFFF"
+                android:src="@drawable/ic_action_navigation_arrow_back"/>
+
+        </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="90dp">
+
+                <SearchView
+                    android:minWidth="360dp"
+                    android:layout_marginHorizontal="32dp"
+                    android:id="@+id/searchView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rigth_radius"
+                    android:backgroundTint="#E9E7E7"
+                    android:visibility="gone"
+                    android:searchHintIcon="@color/search_layover_bg"
+                    android:layout_gravity="center_vertical"
+                    android:elevation="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:text="- Select traffic : "
+                    android:layout_marginRight="70dp"
+                    android:textSize="18dp" />
+
+                <!-- tel Label -->
+
+                <!-- Password Label -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="20dp"
+                        app:srcCompat="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/moto"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="20dp"
+                        app:srcCompat="@drawable/motorcycle" />
+
+                    <ImageView
+                        android:id="@+id/man"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        app:srcCompat="@drawable/man" />
+
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+
+                    <RadioButton
+                        android:id="@+id/radioButtonCar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="69dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonMoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="63dp"/>
+
+                    <RadioButton
+                        android:checked="true"
+                        android:id="@+id/radioButtonMan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:layout_marginLeft="40dp"
+                        android:text="- Select Location : "
+                        android:textSize="18dp" />
+
+
+                    <Switch
+                        android:id="@+id/switchLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="55dp"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutLocation"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+           <EditText
+               android:id="@+id/EditTextLocation"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Location"
+               android:enabled="false"/>
+
+            <Button
+                android:id="@+id/btnLocation"
+                android:layout_width="171dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/radius"
+                android:fontFamily="sans-serif-medium"
+                android:text="Select Location"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:text="- Select point of sales : "
+                        android:textSize="18dp" />
+
+                    <Switch
+                        android:id="@+id/switchPointOfSales"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="18dp"
+                        android:layout_marginTop="10dp" />
+
+                </LinearLayout>
+
+                <ListView
+                    android:visibility="gone"
+                    android:background="@drawable/pointofsale"
+                    android:layout_width="310dp"
+                    android:layout_height="121dp"
+                    android:id="@+id/listViewPos"/>
+
+                <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+        </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="30dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/historicAnalyse"
+                        android:layout_width="171dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/radius"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Historical analysis"
+                        android:textColor="#FFFFFF" />
+
+                    <Button
+                        android:id="@+id/btnAnalyse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/radius"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Analysis"
+                        android:textColor="#FFFFFF" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

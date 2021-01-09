@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_gravity="center"
+    android:background="@drawable/radius">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="84dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="-48dp"
+            android:background="@color/editTextBG"
+            android:hint="Category"
+            android:paddingLeft="20dp"
+            android:textAlignment="viewStart"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/name2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="84dp"
+            android:layout_marginLeft="32dp"
+            android:background="@color/editTextBG"
+            android:padding="8dp"
+            android:src="@drawable/ic_library_books_black_24dp"
+            android:tint="#36B677" />
+
+
+        <TextView
+            android:id="@+id/close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:text="X"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/name"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_library_books_black_24dp"
+                android:tint="#36B677"
+                android:background="@color/editTextBG"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/name"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/name"
+                android:background="@color/editTextBG"
+                android:hint="Product Name"
+                android:paddingLeft="20dp"
+                android:textSize="18sp"
+                android:id="@+id/nameproduct"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="65dp"
+            >
+            <TextView
+                android:id="@+id/mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:padding="8dp"
+                android:text="Mark"
+                android:textSize="18sp"
+                android:layout_marginRight="5dp"
+                android:textColor="#fff"
+                />
+
+            <Spinner
+                android:id="@+id/Mark"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/mark"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="-3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_toRightOf="@+id/mark"
+                android:background="@drawable/radiuoss"
+                android:gravity="center"
+                android:hint="Price"
+                android:inputType="numberDecimal"
+                android:text="Select Mark"
+                android:textColor="#726E6E"
+                android:textSize="15sp" />
+            <!--
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                >
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip6"
+                    android:checkable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipStrokeColor="@color/white"
+                    app:chipStrokeWidth="3dp"
+                    android:text="Fire"
+                    android:theme="@style/Theme.MaterialComponents.Light" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/cat_chip_choice_chip"
+                    android:checkable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choice Chips"
+                    app:chipStrokeColor="@color/white"
+                    app:chipStrokeWidth="3dp"
+                    android:theme="@style/Theme.MaterialComponents.Light" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/cat_chip"
+                    android:checkable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choice Chips"
+                    app:chipStrokeColor="@color/white"
+                    app:chipStrokeWidth="3dp"
+                    android:theme="@style/Theme.MaterialComponents.Light" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            !-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="0dp"
+            >
+
+
+            <TextView
+                android:id="@+id/modele"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:padding="8dp"
+                android:text="Model"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/Model"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="87dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/radiuoss"
+                android:gravity="center"
+                android:hint="Price"
+                android:inputType="numberDecimal"
+                android:text=""
+                android:textColor="#726E6E"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/quantity"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="123dp"
+                android:background="@drawable/radiuoss"
+                android:gravity="center"
+                android:hint=""
+                android:inputType="numberDecimal"
+                android:text=""
+                android:textColor="#726E6E"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/modele3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="122dp"
+                android:layout_marginRight="5dp"
+                android:padding="8dp"
+                android:text="quantity"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/Unit"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="69dp"
+                android:background="@drawable/radiuoss"
+                android:gravity="center"
+                android:hint="Price"
+                android:inputType="numberDecimal"
+                android:text=""
+                android:textColor="#726E6E"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/modele2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="5dp"
+                android:padding="8dp"
+                android:text="Unit"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/radius"
+            android:fontFamily="sans-serif-medium"
+            android:text="cancel"
+            android:textColor="#FFFFFF" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+
+        <Button
+            android:id="@+id/addtolist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/radius"
+            android:fontFamily="sans-serif-medium"
+            android:text="OK"
+            android:textColor="#FFFFFF" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

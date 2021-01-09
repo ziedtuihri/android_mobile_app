@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:id="@+id/lyt_container"
+    android:background="#009688"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        >
+    <!-- Thumbnail Image -->
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/thumbnail"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="31dp"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Category"
+            android:textSize="@dimen/title"
+            android:textStyle="bold" />
+
+        <ImageView
+        android:tint="#4CCE8E"
+        android:id="@+id/thumbnail"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/smartlist1"/>
+
+    <!-- Movie Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:text="product"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" />
+
+    <!-- Rating -->
+    <TextView
+        android:id="@+id/mark"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:text="Mark"
+        android:gravity="right"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#FF9800"
+        android:textSize="@dimen/rating" />
+
+    <!-- Release Year -->
+        <TextView
+            android:id="@+id/quantityUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/thumbnail"
+            android:layout_alignBottom="@+id/title"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="-26dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="quantity and Unit"
+            android:textColor="@color/year"
+            android:textSize="@dimen/year" />
+
+        <TextView
+            android:id="@+id/model"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginRight="-1dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="right"
+            android:text="Model"
+            android:textColor="#FF9800"
+            android:textSize="@dimen/rating" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="3"
+        android:height="@dimen/list_item_height"
+        android:paddingLeft="@dimen/list_item_padding_sides"
+        android:paddingRight="@dimen/list_item_padding_sides" >
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:text="Deleted"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:clickable="false"
+            android:layout_weight="2"
+            android:hapticFeedbackEnabled="true"
+            tools:ignore="UseCompoundDrawables">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="#FFEB3B"
+                android:gravity="center_vertical"
+                android:src="@drawable/swipdelete"
+                android:contentDescription="TODO" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/txt_delete"
+                android:gravity="center_vertical"
+                android:text="Deleted"
+                android:textStyle="bold"
+                android:textColor="#FFEB3B"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/txt_update"
+                android:gravity="center_vertical"
+                android:text="Update"
+                android:textStyle="bold"
+                android:textColor="#FFEB3B"/>
+    </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/txt_undo"
+            android:text="UNDO"
+            android:clickable="false"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textColor="#FFEB3B"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+

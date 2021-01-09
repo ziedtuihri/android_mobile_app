@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".circuitActivity">
+
+    <RelativeLayout
+        android:background="@drawable/side_nav_cont"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/green"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Historical Analyse"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="left"
+            android:layout_centerVertical="true"
+            android:tint="#FFFFFF"
+            android:src="@drawable/ic_action_navigation_arrow_back"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Circuit"
+        android:textSize="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="60dp"
+        />
+
+
+    <GridView
+        android:id="@+id/listCircuit"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:columnWidth="40dp"
+        android:divider="#D7FFFFFF"
+        android:gravity="center"
+        android:horizontalSpacing="20dp"
+        android:lineSpacingExtra="10dp"
+        android:listSelector="@drawable/radius_items"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:text="We will give directions \nto the new user"
+        android:textAlignment="center"
+        android:textColor="#A1A1A1"
+        android:textSize="16sp"
+        android:verticalSpacing="24dp" />
+
+    <Button
+        android:id="@+id/Best"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout3"
+        android:gravity="center"
+        android:layout_marginVertical="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/radius"
+        android:fontFamily="sans-serif-medium"
+        android:text="Best"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
